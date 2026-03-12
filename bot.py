@@ -8,7 +8,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     button = KeyboardButton(
         text="Открыть приложение",
-        web_app=WebAppInfo(url="https://your-site.com")
+        web_app=WebAppInfo(url="https://github.com/Nexus-Lisa/Telegram-Mini-App")
     )
 
     keyboard = ReplyKeyboardMarkup([[button]], resize_keyboard=True)
