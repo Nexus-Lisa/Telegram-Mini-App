@@ -1,7 +1,12 @@
 from telegram import Update, KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+import os
+from dotenv import load_dotenv
 
-TOKEN = "8589702180:AAFJrdZ_98E_qA4enNgmQ58Zqfs6HqxOg7Q"
+load_dotenv()
+
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
